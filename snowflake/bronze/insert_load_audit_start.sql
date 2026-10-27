@@ -1,0 +1,19 @@
+
+INSERT INTO RETAIL_DW.BRONZE.LOAD_AUDIT
+(
+    BATCH_ID,
+    FILE_PATH,
+    TARGET_TABLE,
+    LOAD_STATUS,
+    RUN_TOKEN,
+    STARTED_AT
+)
+VALUES
+(
+    '<% BATCH_ID %>',
+    '<% FILE_PATH %>',
+    '<% TARGET_TABLE %>',
+    'RUNNING',
+    '<% RUN_TOKEN %>',
+    CURRENT_TIMESTAMP()
+);
